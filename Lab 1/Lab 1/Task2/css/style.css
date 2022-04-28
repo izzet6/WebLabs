@@ -1,0 +1,251 @@
+
+
+*, html, body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    height: 100vh;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+.navbar ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    right: 10px;
+}
+.navbar li{
+    display: block;
+    float: left;
+    margin-right:1px;
+}
+.navbar li a{
+    text-decoration: none;
+    text-align: center;
+    background: #343A40;
+    display: block;
+    padding: 12px 20px;
+    min-width: 140px;
+    color: #fff;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    transition: background 100ms ease;
+    -webkit-transition: background 100ms ease;
+}
+.navbar li a:hover{
+    background: #1EAE98;
+}
+.navbar li:hover a{
+    background: #1EAE98;
+}
+.navbar li:hover ul a{
+    background: #f3f3f3;
+    color: black;
+}
+.navbar li:hover ul a:hover{
+    background:#1EAE98;
+    color: #fff;
+}
+.navbar .hidden li{
+    display:block;
+    float: none;
+}
+.navbar li ul{
+    display: none;
+}
+.navbar ul li a:hover+.hidden,.hidden:hover{
+    display:block ;
+}
+
+
+.container {
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
+header {
+    height: 60px;
+    background-color: #112031;
+    padding: 7px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    
+}
+.navbar-brand{
+    color: #fff;
+    font-size: 30px;
+    display: inline-block;
+    margin-left: 7px;
+}
+
+.left, .right {
+    display: flex;
+    font-weight: 600;
+}
+
+.left li {
+    margin-right: 25px;
+    height: 27px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 5px 5px 0;
+}
+
+.icon-container i {
+    font-weight: 600;
+}
+
+main {
+    display: flex;
+}
+
+.body-left   {
+    max-width: 450px;
+    background-color: cadetblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar-text {
+    margin: 120px 0;
+    font-size: 22px;
+    text-align: center;
+}
+
+.sidebar-col {
+    background-color: #000;
+    color: #fff;
+    width: 400px;
+    height: 300px;
+    margin: 0 20px 20px 20px;
+}
+
+.sidebar-col p {
+    padding-top: 40px;
+    margin-left: 150px;
+}
+
+.body-right {
+    background-color: #fff;
+}
+.col-md-8 .btn{
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+.col-md-8 .btn{
+    background: #4a4da5;
+    color: #EEEEEE;
+    padding: 7px;
+    border-radius: 5px;
+    border: 2px solid #4a4da5 ;
+    display: inline-block;
+    transition: all 0.3s ease;
+   
+}
+
+.col-md-8 .btn:hover{
+    /* background:rgba(74,77,165,0.85); */
+    text-decoration: none;
+    background: #EEEEEE;
+    border: 2px solid #4a4da5;
+    color:#2C2E43 ;
+}
+.col-md-8 {
+    padding: 30px 30px;
+}
+.card-mb-4{
+    margin-bottom: 20px;
+}
+
+
+footer .btn-large{
+    font-size: 2rem;
+    padding: 1.3rem 2rem;
+}
+footer .btn{
+    display: inline-block;
+    margin-top: 1rem;
+    background:transparent;
+    padding: 1.3rem 2rem;
+    border:2px solid transparent;
+    border-radius: .3rem;
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+footer .btn-social{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    font-size: 1rem;
+    line-height: 1rem;
+    padding: 1rem .9rem;
+}
+footer .btn-outline{
+    border-color: #fff;
+}
+footer .btn-outline:hover{
+    background: #fff;
+    color: #112031;
+}
+footer .btn-primary{
+    margin-top: 2rem;
+    border-color: #38A3A5;
+    background: #38A3A5;
+}
+footer .btn-primary:hover{
+    background: #258688;
+    border-color: #258688;
+}
+footer{
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    background: #112031;
+    color: #fff;
+    text-align: center;
+}
+
+footer h4{
+    font-size: 1.4rem;
+    margin-top: 2rem;
+}
+footer p{
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+footer li{
+    display: inline-block;
+    margin-right: 1rem;
+}
+/* Copyright */
+.copyright{
+    background-color: #212529;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    color: #fff;
+    text-align: center;
+}
